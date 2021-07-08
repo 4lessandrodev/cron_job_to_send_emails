@@ -8,7 +8,7 @@ import {
 	MAIL_NO_REPLY_NAME,
 	IS_MAIL_SSL,
 	MAIL_PORT,
-} from './env.js';
+} from '../env.js';
 
 async function sendEmail(data) {
 	const transporter = nodemailer.createTransport({
@@ -28,8 +28,7 @@ async function sendEmail(data) {
 		text: data.text,
 		html: data.html,
 	});
-	console.log('Message sent at: ', new Date());
-	console.log(info.messageId);
+	console.log('Message sent id: ', info.messageId);
 }
 
 export { sendEmail as default };

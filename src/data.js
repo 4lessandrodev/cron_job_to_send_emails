@@ -1,6 +1,6 @@
 import pgp from 'pg-promise';
 import promise from 'bluebird';
-import { DB_HOST, DB_USER, DB_PASS, DB_PORT, DB_NAME } from './env.js';
+import { DB_HOST, DB_USER, DB_PASS, DB_PORT, DB_NAME } from '../env.js';
 
 const initOptions = {
 	promiseLib: promise,
@@ -54,7 +54,8 @@ AND active = 'true'`,
 			}
 			return data;
 		})
-		.catch((_error) => {
+		.catch((error) => {
+			console.log(error);
 			return [];
 		});
 

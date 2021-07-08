@@ -9,7 +9,7 @@ function formatToHtml(str) {
 const result = [
 	{
 		name: 'john smith',
-		email: 'wekisap905@nhmty.com', // fill this field (https://temp-mail.org/)
+		email: '', // fill this field (https://temp-mail.org/)
 		message: 'Mensagem: Você recebeu uma nova mensagem',
 		notifiable_type: 'Mensagem',
 		notification_mail_preferences: {
@@ -19,7 +19,7 @@ const result = [
 	},
 	{
 		name: 'sarah parker',
-		email: 'meloci7017@ovooovo.com', // fill this field (https://temp-mail.org/)
+		email: '', // fill this field (https://temp-mail.org/)
 		message: 'Comentário: Alguém comentou em uma postagem sua',
 		notifiable_type: 'Comentário',
 		notification_mail_preferences: {
